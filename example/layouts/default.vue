@@ -52,23 +52,37 @@
   </div>
 </template>
 
-<script>
-export default {
-  data () {
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+
+type To = {
+  name: string
+}
+
+type Item = {
+  title: string
+  icon: string
+  to: To
+}
+
+export default defineComponent({
+  setup() {
+    const items: Item[] = [
+      {
+        title: 'Home',
+        icon: 'home',
+        to: { name: 'index' }
+      },
+      {
+        title: 'Inspire',
+        icon: 'lightbulb',
+        to: { name: 'inspire' }
+      }
+    ]
+
     return {
-      items: [
-        {
-          title: 'Home',
-          icon: 'home',
-          to: { name: 'index' }
-        },
-        {
-          title: 'Inspire',
-          icon: 'lightbulb',
-          to: { name: 'inspire' }
-        }
-      ]
+      items
     }
   }
-}
+})
 </script>

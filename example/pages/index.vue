@@ -40,14 +40,15 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
 import Card from '~/components/Card'
 
-export default {
+export default defineComponent({
   name: 'HomePage',
 
   components: {
     Card
   }
-}
+})
 </script>
