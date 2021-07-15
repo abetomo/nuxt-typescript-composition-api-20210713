@@ -75,7 +75,7 @@ yleLint, Commitlint
 -<script>
 -export default {
 +<script lang="ts">
-+import { defineComponent } from '@vue/composition-api'
++import { defineComponent } from '@nuxtjs/composition-api'
 +
 +export default defineComponent({
    props: {
@@ -101,7 +101,7 @@ yleLint, Commitlint
 -export default {
 -  data () {
 +<script lang="ts">
-+import { defineComponent } from '@vue/composition-api'
++import { defineComponent } from '@nuxtjs/composition-api'
 +
 +type To = {
 +  name: string
@@ -171,7 +171,7 @@ yleLint, Commitlint
 
 -<script>
 +<script lang="ts">
-+import { defineComponent } from '@vue/composition-api'
++import { defineComponent } from '@nuxtjs/composition-api'
  import Card from '~/components/Card'
 
 -export default {
