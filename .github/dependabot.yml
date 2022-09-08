@@ -5,8 +5,8 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
+  - package-ecosystem: "npm"
     target-branch: "main"
-    directory: "/example" # Location of package manifests
+    directory: "/example/"
     schedule:
       interval: "weekly"
