@@ -16,3 +16,5 @@ jobs:
       working-directory: ./example
     - run: npm run lint
       working-directory: ./example
+    - run: npm test
+      working-directory: ./example
